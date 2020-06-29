@@ -151,3 +151,48 @@ becomes
 </footer>
 <!-- end of footer -->
 ```
+
+# CSS
+## Introduction to CSS
+### What is CSS?
+- Cascading Style Sheets - language to style and lay out web pages
+- Can use to style font, color, spacing, layout of page, animations
+- Language for styling your document and determining how it is presented
+
+### How can we alter the appearance of HTML with CSS?
+- Web browser looks for CSS rules
+- What's a CSS rule?
+    - **Selector** - essentially 'selects' the HTML element(s) you want to style
+    - **Properties** - properties which you want to change
+
+### CSS Declarations
+where you set the CSS properties to specific values
+
+```CSS
+some-element {
+    #property: declaration;
+    background-color: rgb(0, 0, 255);
+    font-size: 50px;
+}
+```
+
+## The Box Model (Padding, Margin and Borders)
+- Each element in an HTML document can be thought of as a rectangular box
+- The standard box model describes the space an element takes up
+- Each box has four edges: margin, border, padding, content edges
+
+Margin edge
+|-------------------------------------------|
+|   Border edge                             |
+|   |-------------------------------|       |
+|   |    padding edge               |       |
+|   |    |---------------------|    |       |
+|   |    |    Content edge     |    |       |
+|   |    |    |------------|   |    |       |
+|   |    |    |            |   |    |       |
+|   |    |    |------------|   |    |       |
+|   |    |---------------------|    |       |
+|   |-------------------------------|       |
+|-------------------------------------------|
+
+## Background Color and Font Size
