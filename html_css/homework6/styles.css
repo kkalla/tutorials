@@ -1,0 +1,122 @@
+/* media rule 1 */
+@media screen and (max-width: 400px) {
+    ul#ingredients li {
+        font-size: 13px;
+    }
+}
+
+/* media rule 2 */
+@media screen and (min-width: 401px) and (max-width: 750px){
+    ul#ingredients li {
+        font-size: 15px;
+    }
+}
+
+/* media rule 2 */
+@media screen and (min-width: 750px){
+    ul#ingredients li {
+        font-size: 17px;
+    }
+}
+
+/* desktop */
+html {
+    background-color: lemonchiffon;
+}
+
+header {
+    background-color: aquamarine;
+}
+
+header h1 {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+#nav-bar {
+    list-style: none;
+    display: flex;
+    background-color: darkorange;
+    padding: 0px 10px;
+    height: 30px;
+    margin: 0px;
+}
+
+#nav-bar li {
+    padding: 0px 10px;
+    line-height: 30px;
+}
+
+.nav-button {
+    background-color: dodgerblue;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.nav-button:hover {
+    background-color: darkblue;
+}
+
+@keyframes blink {
+    from { opacity: 1.0; }
+    25% { opacity: 0.5; }
+    50% { opacity: 0.0;}
+    75% { opacity: 0.5;}
+    to { opacity: 1.0;}
+  }
+.blink {
+animation: blink 1.2s infinite;
+float: right;
+}
+
+main {
+    margin: 10px;
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+p {
+    font-size: 20px;
+    width: 95%;
+}
+
+ul#ingredients {
+    list-style-image: url("images/checker.png");
+}
+
+ol {
+    list-style: lower-roman;
+}
+
+
+
+p span {
+    font-style: italic;
+}
+
+p span:last-child {
+    text-decoration: underline;
+}
+
+.emp {
+    font-style: normal;
+    color: red;
+}
+
+li {
+    font-size: 17px;
+}
+
+h1 {
+    padding-top: 10%;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h2 {
+    padding-top: 3%;
+}

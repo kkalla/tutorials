@@ -1,0 +1,54 @@
+html {
+    background-color: lemonchiffon;
+}
+
+ul#ingredients {
+    list-style-image: url("images/checker.png");
+}
+
+ol {
+    list-style: lower-roman;
+}
+
+p {
+    font-size: 20px;
+    width: 1000px;
+}
+
+p span {
+    font-style: italic;
+}
+
+p span:last-child {
+    text-decoration: underline;
+}
+
+.emp {
+    font-style: normal;
+    color: red;
+}
+
+li {
+    font-size: 17px;
+}
+
+h1 {
+    padding-top: 10%;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h2 {
+    padding-top: 3%;
+}
+
+@keyframes blink {
+    from { opacity: 1.0; }
+    25% { opacity: 0.5; }
+    50% { opacity: 0.0;}
+    75% { opacity: 0.5;}
+    to { opacity: 1.0;}
+  }
+  .blink {
+    animation: blink 1.2s infinite;
+  }

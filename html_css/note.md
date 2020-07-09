@@ -171,6 +171,8 @@ becomes
 <!-- end of footer -->
 ```
 
+---
+
 # CSS
 
 ## Introduction to CSS
@@ -201,7 +203,7 @@ some-element {
 }
 ```
 
-## The Box Model (Padding, Margin and Borders)
+### The Box Model (Padding, Margin and Borders)
 
 - Each element in an HTML document can be thought of as a rectangular box
 - The standard box model describes the space an element takes up
@@ -223,7 +225,7 @@ Margin edge
 |-------------------------------------------|
 ```
 
-## Background Color and Font Size
+### Background Color and Font Size
 
 ```CSS
 body {
@@ -236,5 +238,229 @@ section {
 
 p {
     font-size: 25px;
+}
+```
+
+## Intermediate CSS
+
+### Width and Text Alignment
+
+```CSS
+/* add padding and margin */
+p {
+    padding-left: 10px;
+    /* etc. */
+    margin-top: 10px;
+}
+
+/* add text alignment and width
+If change properties of parent,
+all children inherit that propertis.
+That's what cascade means */
+main {
+    width: 1000px;
+}
+
+h1 {
+    text-align: center;
+}
+```
+
+### Inheritance (Cascading)
+
+```CSS
+main {
+    width: 1000px;
+    color: blue;
+}
+
+/* Width gonna be 1000px */
+section {
+    width: inherit;
+}
+
+/* The color of 'p' will be blue */
+p {
+    color: inherit;
+}
+
+/* The color of 'h1' will be h1 */
+h1 {
+    color: orange;
+}
+```
+
+### Type Selectors
+
+```CSS
+/* parent parent child ... */
+main section ul {
+    background-color: green;
+}
+```
+
+### Direct Descendants
+
+\<example html>
+
+```HTML
+<!-- ... -->
+<body>
+    <section>
+        <div>
+            <h4>This is h4</h4>
+            <div>
+                <h4>The innermost h4</h4>
+            </div>
+        </div>
+    </section>
+</body>
+```
+
+```CSS
+/* This changes color of the outmost h4 in div */
+section > div > h4 {
+    color: yellow;
+}
+```
+
+### Classes
+
+```CSS
+.example-div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: limegreen;
+}
+
+.cursive {
+    font-family: cursive;
+}
+
+/* you can use class with direct descendant */
+section > .example-div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: limegreen;
+}
+
+/* or like this */
+.example-div .cursive-h4 {
+    font-family: cursive;
+}
+```
+
+```HTML
+<!-- use class like this -->
+<div class="example-div">
+    <p> hello! </p>
+</div>
+
+<section>
+    <!-- you can apply different classes at once -->
+    <div class="example-div cursive">
+        <p>This is p in section > example-div</p>
+    </div>
+</section>
+```
+
+### IDs
+
+ID should be unique in page.
+
+```HTML
+<section id="id1">
+    <h4>This is h4 in id1</h4>
+</section>
+```
+
+```CSS
+/* use hashtag to select id */
+#id1 > h4 {
+    color: skyblue;
+    font-family: cursive;
+}
+
+/* or */
+section#id1 {
+    color: orange;
+}
+```
+
+## Advanced CSS
+
+### Specificity
+
+- Specificity is super important with CSS.  
+
+    0. Type selectors (e.g. h1, div, header, p)
+    1. Class selectors (e.g. .example-class)
+    2. ID selectors (e.g. #example)
+
+classes are more specific than descendant selector.
+ID is the most specific selector.
+
+### Advanced Selectors
+
+```CSS
+/* select p and h3 in example. comma is important*/
+#example p, h3 {
+    color: yellow;
+}
+
+/* psuedo class */
+#example p:first-child {
+    color: red;
+}
+
+#example p:last-child {
+    color: red;
+}
+
+#example p:hover {
+    filter: invert(100);
+    transform: scale(2);
+}
+/* select sibling element. select p directly next to h3*/
+#example h3+p {
+    color: red;
+}
+
+#example h3 + p {
+    color: red;
+}
+```
+
+## CSS Responsiveness
+
+```CSS
+/* display mode */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    /* clock-wise top > right > bottom > left */
+    margin: 0 10px 0 10px;
+    /* If there are two values, first one is top-bottom and the last one is left-right padding */
+    padding: 10px 10px;
+}
+
+/* border */
+ul {
+    border-radius: 10px;
+}
+
+/* responsiveness */
+img {
+    width: 25%;
+    height: auto;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: center;
 }
 ```
