@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" height="100%" width="100%">
+    <text id="text6079" y="43.255157" x="0" style="font-size:75px;" xml:space="preserve">
+    	<tspan style="fill:hsl(0,60%,65%)" y="43.255157" x="0" id="tspan6081">⇒</tspan>
+    	<tspan style="fill:hsl(30,60%,65%)" id="tspan6083" y="137.00516" x="0">▶</tspan>
+    	<tspan style="fill:hsl(60,60%,65%)" id="tspan6085" y="229.56088" x="0">▼</tspan>
+    	<tspan style="fill:hsl(90,60%,65%)" id="tspan6103" y="323.31088" x="0" /></text>
+    <text xml:space="preserve" style="font-size:75px;word-spacing:0px;text-anchor:start;fill:#83a040;;" x="107.20404" y="-53.125511" id="text6105">
+    <tspan style="fill:hsl(120,0%,65%)" x="107.20404" y="-53.125511" id="tspan6111" />
+    <tspan style="fill:hsl(150,60%,65%)" x="107.20404" y="40.656475" id="tspan6113">➦</tspan>
+    <tspan style="fill:hsl(180,60%,65%)" x="107.20404" y="134.40648" id="tspan6115">➙</tspan>
+    <tspan style="fill:hsl(210,60%,65%)" x="107.20404" y="228.15648" id="tspan6117">✪</tspan>
+    <tspan style="fill:hsl(240,60%,65%)" x="107.20404" y="321.90646" id="tspan6129" /></text>
+    <text id="text6131" y="43.255157" x="214.40808" style="font-size:75px;word-spacing:0px;text-anchor:start;fill:#83a040;;" xml:space="preserve">
+    <tspan style="fill:hsl(270,60%,65%)" id="tspan6145" y="43.255157" x="214.40808">❧</tspan>
+    <tspan style="fill:hsl(300,60%,65%)" id="tspan6147" y="137.21698" x="214.40808">❖</tspan>
+    <tspan style="fill:hsl(330,60%,65%)" id="tspan6149" y="230.75516" x="214.40808">➟</tspan>
+    <tspan style="fill:hsl(0,60%,65%)" id="tspan6155" y="324.50516" x="214.40808" /></text>
+    <text xml:space="preserve" style="font-size:75px;word-spacing:0px;text-anchor:start;fill:#83a040;;" x="321.61215" y="43.255157" id="text6157">
+    <tspan style="fill:hsl(30,60%,65%)" x="321.61215" y="43.255157" id="tspan6177">»</tspan>
+    <tspan style="fill:hsl(60,60%,65%)" x="321.61215" y="137.03714" id="tspan6179">✓</tspan>
+    <tspan style="fill:hsl(90,60%,65%)" x="321.61215" y="230.78714" id="tspan6181">➥</tspan>
+    </text>
+</svg>

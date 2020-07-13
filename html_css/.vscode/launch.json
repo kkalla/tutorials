@@ -9,7 +9,7 @@
             "request": "launch",
             "name": "Launch Chrome against localhost",
             "url": "http://localhost:8080",
-            "file": "${workspaceFolder}/project1/myFavoritePapers.html"
+            "file": "${workspaceFolder}/homework6/recipe.html"
         }
     ]
 }
