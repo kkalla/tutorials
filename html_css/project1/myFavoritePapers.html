@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Favorite Papers</title>
+        <meta charset="UTF-8">
+        <base href="https://arxiv.org/pdf/">
+    </head>
+    <body>
+        <!-- This is page header -->
+        <header>
+            <h1>My Favorite Papers about Object Detection with Deep Learning</h1>
+            This is a list of famous papers and codes of object detection algorithms.
+        </header>
+        <!-- This is main -->
+        <main>
+            <!-- Faster R-CNN -->
+            <div>
+                <h3>1. Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks</h3>
+                <ul>
+                    <li>Published in 6 Jun 2015. Ren et al.</li>
+                    <li>
+                        Abstract:
+                        <blockquote cite="https://arxiv.org/abs/1506.01497">
+                            State-of-the-art object detection networks depend on region proposal algorithms 
+                            to hypothesize object locations. Advances like SPPnet and Fast R-CNN have reduced 
+                            the running time of these detection networks, 
+                            exposing region proposal computation as a bottleneck. In this work, 
+                            we introduce a Region Proposal Network (RPN) that shares full-image convolutional features 
+                            with the detection network, thus enabling nearly cost-free region proposals. 
+                            An RPN is a fully convolutional network that simultaneously predicts object bounds and 
+                            objectness scores at each position. The RPN is trained end-to-end to generate 
+                            high-quality region proposals, which are used by Fast R-CNN for detection. 
+                            We further merge RPN and Fast R-CNN into a single network by sharing 
+                            their convolutional features---using the recently popular terminology of 
+                            neural networks with 'attention' mechanisms, the RPN component tells 
+                            the unified network where to look. For the very deep VGG-16 model, 
+                            our detection system has a frame rate of 5fps (including all steps) on a GPU, 
+                            while achieving state-of-the-art object detection accuracy on 
+                            PASCAL VOC 2007, 2012, and MS COCO datasets with only 300 proposals per image. 
+                            In ILSVRC and COCO 2015 competitions, Faster R-CNN and RPN are the foundations of 
+                            the 1st-place winning entries in several tracks. Code has been made publicly available.
+                        </blockquote>
+                    </li>
+                    <li>Paper: <a href="1506.01497.pdf">Go To Paper</a></li>
+                    <li>Code: Implemented with Tensorpack, 
+                        <a href="https://github.com/tensorpack/tensorpack/tree/master/examples/FasterRCNN">GitHub</a>
+                    </li>
+                </ul>
+
+                <!-- yolo -->
+                <h3>2. YOLOv5</h3>
+                <figure>
+                    <img src="https://pjreddie.com/media/image/yologo_2.png" style="width:50%">
+                    <figcaption>https://pjreddie.com/darknet/yolo/</figcaption>
+                </figure>
+                <ul>
+                    <li>
+                        Article: 
+                        <a href="https://medium.com/towards-artificial-intelligence/yolo-v5-is-here-custom-object-detection-tutorial-with-yolo-v5-12666ee1774e">
+                            YOLO V5 is Here! Custom Object Detection Tutorial with YOLO V5</a>
+                    </li>
+                    <li>
+                        Code: <a href="https://github.com/ultralytics/yolov5">GitHub</a>
+                    </li>
+                </ul>
+
+                <!-- DETR -->
+                <h3>End-to-End Object Detection with Transformers</h3>
+                <ul>
+                    <li>Published in 26 May 2020. Carion et al.</li>
+                    <li>Abstract: 
+                        <blockquote cite="https://arxiv.org/abs/2005.12872">
+                            We present a new method that views object detection as a direct set prediction problem. 
+                            Our approach streamlines the detection pipeline, 
+                            effectively removing the need for many hand-designed components like 
+                            a non-maximum suppression procedure or anchor generation that 
+                            explicitly encode our prior knowledge about the task. 
+                            The main ingredients of the new framework, called DEtection TRansformer or DETR, 
+                            are a set-based global loss that forces unique predictions via bipartite matching, 
+                            and a transformer encoder-decoder architecture. 
+                            Given a fixed small set of learned object queries, DETR reasons about 
+                            the relations of the objects and the global image context to directly output 
+                            the final set of predictions in parallel. 
+                            The new model is conceptually simple and does not require a specialized library, 
+                            unlike many other modern detectors. DETR demonstrates accuracy and run-time performance 
+                            on par with the well-established and highly-optimized Faster RCNN baseline on the 
+                            challenging COCO object detection dataset. 
+                            Moreover, DETR can be easily generalized to produce panoptic segmentation in 
+                            a unified manner. We show that it significantly outperforms competitive baselines. 
+                            Training code and pretrained models are available at <a href="https://github.com/facebookresearch/detr">this https URL</a>.
+                        </blockquote>
+                    </li>
+                    <li>This video explains the paper well</li>
+                    <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/T35ba_VXkMY" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>Not support this browser.</iframe>
+                    <li>Paper: <a href="2005.12872.pdf">Go to Paper</a></li>
+                    <li>Ofiicial Code: <a href="https://github.com/facebookresearch/detr">GitHub</a></li>
+                </ul>
+            </div>
+        </main>
+
+        <!-- This is footer -->
+        <footer>
+            <h4>Please write an algorithm that you want to add here</h4>
+
+            <form action="/action_page.php">
+                <label for="algName">Enter here:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+            <p>Click the "Submit" button </p>
+        </footer>
+    </body>
+</html>
