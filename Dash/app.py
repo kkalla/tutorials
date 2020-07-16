@@ -14,6 +14,15 @@ df2 = pd.read_csv('https://gist.githubusercontent.com/chriddyp/5d1ea79569ed194d4
 
 
 def generate_table(df, max_rows=10):
+    """Generate table from pandas DataFrame
+
+    :param df: pandas DataFrame with data
+    :type df: pd.DataFrame
+    :param max_rows: maximum number of rows, defaults to 10
+    :type max_rows: int, optional
+    :return: html.Table
+    :rtype: html.Table
+    """
     return html.Table([
         html.Thead(
             html.Tr([html.Th(col) for col in df.columns])

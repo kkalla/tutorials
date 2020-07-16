@@ -1,0 +1,199 @@
+/*
+Some styles copy from below
+=========================================================
+* Product Page: http://www.creative-tim.com/product/paper-dashboard
+* Copyright 2017 Creative Tim (http://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/paper-dashboard/blob/master/LICENSE.md)
+=========================================================
+
+main brand color - 9EC8C5 (shadow green)
+light accent = 70B6D1 (Downy)
+light shade = F8F6F6 (hint of red)
+dark accent = 8D896C (olive haze)
+dark shade = 1274AE (denim)
+info = 0d62a8
+success = 64b673
+warn = e2a63b
+danger = f44336
+*/
+
+@media (min-width: 1199px) {
+  .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+  .navbar-nav {
+    float: left;
+    margin: 0;
+  }
+}
+
+body {
+  background-color: #1274AE;
+  padding: 5% 0px;
+  font-size: 14px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+header {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+h1 {
+  font-size: 2.6em;
+  line-height: 1.5em;
+}
+
+header h1 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  color: rgb(252, 252, 251);
+  margin-bottom: 80px;
+  margin-top: 5px;
+  font-weight: 700;
+  font-family: "Roboto Slab", "Times New Roman", serif;
+}
+
+nav {
+  display: block;
+}
+
+div {
+  display: block;
+}
+
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.navbar {
+  background-color: #9EC8C5;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  position: relative;
+  height: auto;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  height: auto;
+}
+
+.navbar-collapse {
+  border-top: none;
+  box-shadow: none;
+  margin-right: -15px;
+  margin-left: -15px;
+  height: 55px;
+}
+
+
+.navbar-nav {
+  display: inline-flex;
+  margin: 7.5px -15px;
+  color: white;
+  list-style: none;
+  list-style-position: initial;
+  list-style-image: initial;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+.navbar-nav li {
+  position: relative;
+  display: block;
+}
+
+.active {
+  color: inherit;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-nav > li > a {
+  color: inherit;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+.card {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  color: rgba(0,0,0, 0.87);
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.content {
+  padding: 15px 15px;
+}
+
+#shortBio {
+  display: inline-flex;
+  list-style: none;
+  color: #0d62a8;
+}
+
+#shortBio > li > a {
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: underline;
+}

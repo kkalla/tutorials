@@ -1,0 +1,29 @@
+{% extends "structure.html" %}
+
+{% block header_navbar_ul %}
+    <ul class="navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li class="active"><a href="/about">About</a></li>
+    </ul>
+{% endblock header_navbar_ul %}
+
+{% block main %}
+    <div class="card">
+        <div class="content">
+            <ul id="shortBio">
+                <li>
+                    <figure>
+                        <img src="static/images/baby_groot.jpg" width="100"/>
+                        <figcaption>This is baby groot, not ME</figcaption>
+                      </figure>
+                    </li>
+                <li>AnJun Lee is a research engineer at <a href="http://agilesoda.com/">AgileSoDA</a>, where AnJun develops AI models to solve real-world problems related to Computer Vision in business, including data analysis and educating clients about AI techs.
+
+                    Anjun has developed a smart gas meter OCR system with MobileEntropy and made an AI system with KIDI and Hanwha Systems ICT recently, that automates insurance claim processes to help claim adjusters and prevent fraud.
+                    
+                    Anjun enjoys playing bass guitar, fishing, sim-racings and many sports like football. Please email dkswns333@agilesoda.ai</li>
+            </ul>
+            
+        </div>
+    </div>
+{% endblock main %}

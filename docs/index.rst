@@ -10,7 +10,8 @@ Welcome to Tutorials's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
+   Dash
+   Dash.app
 
 Indices and tables
 ==================

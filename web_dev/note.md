@@ -15,3 +15,8 @@
 ```
 
 * You can generate random colors at [colormind.io](http://colormind.io/).
+
+## Integrating the Frontend and Backend
+
+### Processing Client Data
+
