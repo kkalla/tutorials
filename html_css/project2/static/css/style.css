@@ -1,0 +1,91 @@
+body .theme-light__forced {
+  --white: #fff;
+  --black: #0c0d0e;
+  --black-025: #fafafb;
+  --black-400: #848d95;
+  --blue-600: #0077cc;
+  --bs-sm: 0 1px 2px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0, 0, 0, 0.05),
+    0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  padding-top: 50px;
+  line-height: 1;
+}
+
+html body div a span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+header {
+  display: block;
+}
+
+a {
+  color: var(--blue-600);
+  text-decoration: none;
+  text-decoration-style: initial;
+  text-decoration-color: initial;
+  cursor: pointer;
+}
+.top-bar {
+  background-color: var(--black-025);
+  border-top: 3px solid #f48024;
+  box-shadow: var(--bs-sm);
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 50px;
+  position: fixed;
+  min-width: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.top-bar div {
+  height: 100%;
+  max-width: 97.23rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+#grid-cell {
+  flex-shrink: 0;
+  flex-flow: row nowrap;
+}
+
+#grid-cell a {
+  width: 44px;
+  padding: 0;
+}
+
+#grid-cell a span {
+  width: 18px;
+  height: 2px;
+  display: block;
+  background-color: var(--black-400);
+  color: var(--blue-600);
+  position: relative;
+}
+
+#grid-cell a span:before,
+span:after {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 2px;
+  left: 0;
+  background-color: var(--black-400);
+  top: -5px;
+}
+
+#grid-cell a span:after {
+  top: 5px;
+}
