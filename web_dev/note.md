@@ -20,3 +20,8 @@
 
 ### Processing Client Data
 
+### Integrating a SQLite Database
+
+using sqlite3 package of python
+
+### Create a Data Model

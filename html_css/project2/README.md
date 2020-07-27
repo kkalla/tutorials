@@ -5,7 +5,7 @@
 ~~My choice is gonna be one of [wikipedia](https://www.wikipedia.org/),
 [Etsy](https://www.etsy.com/),
 [amazon](https://www.amazon.com/) and
-[stackoverflow](https://stackoverflow.com/).~~ I Choose Etsy :).
+[stackoverflow](https://stackoverflow.com/).~~ I Choose stackoverflow :).
 These sites are simple and my favorites.
 
 ## Steps

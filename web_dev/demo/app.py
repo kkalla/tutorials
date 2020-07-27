@@ -1,6 +1,9 @@
 from flask import Flask, render_template, request
 
+import model
+
 app = Flask(__name__)
+
 
 @app.route('/', methods=["GET", "POST"])
 def home():
@@ -10,8 +13,9 @@ def home():
         username = request.form['username']
         password = request.form['password']
         if username == 'Gordon' and password == 'Ramsay':
+            message = model.show_color(username)
             return render_template('index.html',
-                                   message="Login successful")
+                                   message=message)
         else:
             error_message = "Hint: He curses a lot."
             return render_template('football.html',
