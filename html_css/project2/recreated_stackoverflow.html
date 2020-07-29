@@ -16,13 +16,17 @@
       <div>
         <div id="grid-cell">
           <a href="#">
-            <span> </span>
+            <div id="menu-icon">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
           </a>
           <a href="https://stackoverflow.com" class="logo">
             <span>StackOverflow</span>
           </a>
         </div>
-        <ol class="list-reset">
+        <ol class="list-reset grid" id="top-menu">
           <li>
             <a>Products</a>
           </li>
@@ -33,7 +37,7 @@
             <a href="">Use Cases</a>
           </li>
         </ol>
-        <form action="">
+        <form action="" id="search">
           <div>
             <input type="text" placeholder="Search..." />
             <svg
@@ -49,10 +53,10 @@
             </svg>
           </div>
         </form>
-        <ol>
+        <ol class="list-reset grid" id="login-signup">
           <li>
-            <a href="" id="log-in">Log in</a>
-            <a href="" id="sing-up">Sign up</a>
+            <a href="" class="s-btn" id="log-in">Log in</a>
+            <a href="" class="s-btn" id="sign-up">Sign up</a>
           </li>
         </ol>
       </div>
