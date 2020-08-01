@@ -13,6 +13,8 @@ body,
   --powder-700: #39739d;
   --bs-sm: 0 1px 2px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0, 0, 0, 0.05),
     0 2px 8px rgba(0, 0, 0, 0.05);
+  --bs-md: 0 1px 3px rgba(0, 0, 0, 0.06), 0 2px 6px rgba(0, 0, 0, 0.06),
+    0 3px 8px rgba(0, 0, 0, 0.09);
 }
 
 body {
@@ -113,9 +115,32 @@ p {
   margin-top: 0;
 }
 
+.ta-center {
+  text-align: center;
+}
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.fc-orange {
+  color: var(--orange-400);
+}
+
+.f-bold {
+  font-family: "Roboto Slab Bold", serif;
+  font-weight: 700;
+}
+
+.mb24 {
+  margin-bottom: 24px;
+}
+
 .top-bar {
   background-color: var(--black-025);
   border-top: 3px solid #f48024;
+  border-image-repeat: stretch;
   box-shadow: var(--bs-sm);
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
@@ -125,6 +150,7 @@ p {
   top: 0;
   left: 0;
   width: 100%;
+  vertical-align: baseline;
 }
 
 .top-bar * {
@@ -207,6 +233,55 @@ body .container {
 
 .svg-icon {
   vertical-align: bottom;
+}
+
+.small-bar {
+  height: 8px !important;
+  width: 64px !important;
+  display: block !important;
+  background-color: var(--orange-400);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  border-radius: 1000px;
+}
+
+.center-grid-item {
+  flex-basis: 33.33%;
+  max-width: 24.3rme;
+  box-shadow: var(--bs-md);
+  border-radius: 7px;
+  font-size: 1.15rem;
+  padding: 32px;
+  margin-top: 64px;
+}
+
+.center-grid-item img {
+  margin-bottom: 16px;
+}
+
+.center-grid-item h4 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  font-size: 1.61rem;
+  margin-bottom: 16px;
+}
+
+.center-grid-item > a {
+  background-color: #2b2d6e;
+  display: inline-block;
+  color: var(--white);
+  border-radius: 3px;
+}
+
+.center-grid-item:nth-of-type(2) {
+  margin-left: 64px;
+  margin-right: 64px;
+  margin-top: 0;
+}
+
+.center-grid-item:nth-of-type(2) > a {
+  background-color: var(--orange-400);
 }
 
 .footer-col {
@@ -452,8 +527,6 @@ body .container {
 }
 
 #phb-title {
-  font-family: "Roboto Slab Bold", serif;
-  font-weight: 700;
   width: 90% !important;
   text-align: center !important;
   font-size: 4.23rem !important;
@@ -492,6 +565,28 @@ body .container {
   background-color: var(--orange-400);
   color: var(--white);
   border-radius: 3px;
+}
+
+#for-developers h2 {
+  width: 90%;
+  font-size: 2.61rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+}
+
+#for-developers p {
+  max-width: 40.51rem;
+  width: 90%;
+  font-size: 1.3rem;
+  margin-bottom: 48px;
+  clear: both;
+}
+
+#qa-grid {
+  max-width: 81.025rem;
+  width: 90%;
+  align-items: flex-start;
 }
 
 #footer-container {
