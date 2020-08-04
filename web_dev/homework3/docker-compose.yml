@@ -1,0 +1,16 @@
+version: '0.1'
+
+services:
+    db:
+        image: postgres:13-alpine
+        volumes: 
+            - db_data:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=kkalla
+            - POSTGRES_PASSWORD=kkalla
+            - POSTGRES_DB=demo_app_db
+        ports:
+            - '5432:5432'
+
+volumes:
+    db_data:
