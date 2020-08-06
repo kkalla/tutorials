@@ -1,345 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="static/css/style.css" />
-    <link
-      rel="shortcut icon"
-      href="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196"
-    />
-    <title>
-      Stack Overflow - Where Developers Learn, Share, & Build Careers
-    </title>
-  </head>
-  <body>
-    <header class="top-bar">
-      <div>
-        <div id="grid-cell">
-          <a href="#">
-            <div id="menu-icon">
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </a>
-          <a href="https://stackoverflow.com" class="logo">
-            <span>StackOverflow</span>
-          </a>
-        </div>
-        <ol class="list-reset grid" id="top-menu">
-          <li>
-            <a>Products</a>
-          </li>
-          <li>
-            <a href="">Customers</a>
-          </li>
-          <li>
-            <a href="">Use Cases</a>
-          </li>
-        </ol>
-        <form action="" id="search">
-          <div>
-            <input type="text" placeholder="Search..." />
-            <svg
-              aria-hidden="true"
-              class="s-input-icon s-input-icon__search svg-icon iconSearch"
-              width="18"
-              height="18"
-              viewBox="0 0 18 18"
-            >
-              <path
-                d="M18 16.5l-5.14-5.18h-.35a7 7 0 10-1.19 1.19v.35L16.5 18l1.5-1.5zM12 7A5 5 0 112 7a5 5 0 0110 0z"
-              ></path>
-            </svg>
-          </div>
-        </form>
-        <ol class="list-reset grid" id="login-signup">
-          <li>
-            <a href="" class="s-btn" id="log-in">Log in</a>
-            <a href="" class="s-btn" id="sign-up">Sign up</a>
-          </li>
-        </ol>
-      </div>
-    </header>
-    <div class="container">
-      <div id="content">
-        <div class="py128" id="product-hero-background">
-          <h1 class="f-bold" id="phb-title">
-            We
-            <span> <3 </span>
-            people who code
-          </h1>
-          <p>
-            We build products that empower developers and connect them to
-            solutions that enable productivity, growth, and discovery.
-          </p>
-          <div class="grid">
-            <a href="" class="py12 px24">
-              For developers
-            </a>
-            <a href="" class="py12 px24">
-              For businesses
-            </a>
-          </div>
-        </div>
-        <div class="py64 ta-center" id="for-developers">
-          <h2 class="f-bold fs-headline2">For developers, by developers</h2>
-          <div class="small-bar"></div>
-          <p class="ta-center mx-auto">
-            Stack Overflow is an
-            <a href="" class="fc-orange">open community</a> for anyone that
-            codes. We help you get answers to your toughest coding questions,
-            share knowledge with your coworkers in private, and find your next
-            dream job.
-          </p>
-          <div class="grid mx-auto" id="qa-grid">
-            <div class="center-grid-item">
-              <img
-                class="mb16"
-                src="https://cdn.sstatic.net/Img/home/public-qa.svg?v=d82acaa7df9f"
-              />
-              <h4>Public Q&A</h4>
-              <p class="mb24">
-                Get answers to more than 16.5 million questions and give back by
-                sharing your knowledge with others.
-                <a href="" class="fc-orange">Sign up</a> for an account.
-              </p>
-              <a href="" class="py12 px24">Browse questions</a>
-            </div>
-            <div class="center-grid-item">
-              <img
-                class="mb16"
-                src="https://cdn.sstatic.net/Img/home/private-qa.svg?v=2c1de180b6d7"
-              />
-              <h4>Private Q&A</h4>
-              <p class="mb24">
-                Level up with Stack Overflow while you work. Share knowledge
-                privately with your coworkers using our flagship Q&A engine.
-              </p>
-              <a href="" class="py12 px24">Try for free</a>
-            </div>
-            <div class="center-grid-item">
-              <img
-                class="mb16"
-                src="https://cdn.sstatic.net/Img/home/jobs.svg?v=931d6c0863ee"
-              />
-              <h4>Browse jobs</h4>
-              <p class="mb24">
-                Find the right job through high quality listings and search for
-                roles based on title, technology stack, salary, location, and
-                more.
-              </p>
-              <a href="" class="py12 px24">Find a job</a>
-            </div>
-          </div>
-        </div>
-        <div class="py128" id="for-businesses">
-          <h2 class="mx-auto mb24 f-bold ta-center fs-headline2">
-            For businesses, by developers
-          </h2>
-          <div class="small-bar"></div>
-          <p class="ta-center mx-auto mb64 w90">
-            Our mission is to help developers write the script of the future.
-            This means helping you find and hire skilled developers for your
-            business and providing them the tools they need to share knowledge
-            and work effectively.
-          </p>
-          <div class="grid grid__center mx-auto w90">
-            <div class="grid grid__center bs-md p32">
-              <div>
-                <img
-                  class="d-block"
-                  src="https://cdn.sstatic.net/Img/home/private-questions.svg?v=a4f1cfb08f7e"
-                  width="76"
-                />
-              </div>
-              <p class="mb0">
-                Quickly find and share internal knowledge with
-                <a href="" class="fc-orange">Private Q&A</a>
-              </p>
-            </div>
-            <div class="grid grid__center bs-md p32 mx48">
-              <div>
-                <img
-                  class="d-block"
-                  src="https://cdn.sstatic.net/Img/home/find-candidate.svg?v=9099aa106ad3"
-                  width="76"
-                />
-              </div>
-              <p class="mb0">
-                Find the perfect candidate for your growing technical team with
-                <a href="" class="fc-orange">Talent solutions</a>
-              </p>
-            </div>
-            <div class="grid grid__center bs-md p32">
-              <div>
-                <img
-                  class="d-block"
-                  src="https://cdn.sstatic.net/Img/home/accelerate.svg?v=9d4c2786ff02"
-                  width="76"
-                />
-              </div>
-              <p class="mb0">
-                Accelerate the discovery of your products or services through
-                our <a href="" class="fc-orange">Advertising platform</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer>
-      <div id="footer-container">
-        <div id="footer-logo">
-          <a href="https://stackoverflow.com">
-            <svg
-              aria-hidden="true"
-              class="svg-icon"
-              width="32"
-              height="37"
-              viewBox="0 0 32 37"
-            >
-              <path d="M26 33v-9h4v13H0V24h4v9h22z" fill="#BCBBBB"></path>
-              <path
-                d="M21.5 0l-2.7 2 9.9 13.3 2.7-2L21.5 0zM26 18.4L13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5zM9.1 15.2l15 7 1.4-3-15-7-1.4 3zm14 10.79l.68-2.95-16.1-3.35L7 23l16.1 2.99zM23 30H7v-3h16v3z"
-                fill="#F48024"
-              ></path>
-            </svg>
-          </a>
-        </div>
-        <nav id="footer-nav">
-          <div class="footer-col">
-            <h5 class="footer-col-title">
-              <a href="https://stackoverflow.com">Stack Overflow</a>
-            </h5>
-            <ul class="footer-col-list">
-              <li class="item">
-                <a href="">Questions</a>
-              </li>
-              <li class="item">
-                <a href="">Jobs</a>
-              </li>
-              <li class="item">
-                <a href="">Developer Jobs Directory</a>
-              </li>
-              <li class="item">
-                <a href="">Salary Calculator</a>
-              </li>
-              <li class="item">
-                <a href="">Help</a>
-              </li>
-              <li class="item">
-                <a href="">Mobile</a>
-              </li>
-              <li class="item">
-                <a href="">Disable Responsiveness</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h5 class="footer-col-title">
-              <a href="https://stackoverflowbusiness.com">Products</a>
-            </h5>
-            <ul class="footer-col-list">
-              <li class="item">
-                <a href="">Teams</a>
-              </li>
-              <li class="item">
-                <a href="">Talent</a>
-              </li>
-              <li class="item">
-                <a href="">Advertising</a>
-              </li>
-              <li class="item">
-                <a href="">Enterprise</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h5 class="footer-col-title">
-              <a href="https://stackoverflow.com/company/about">Company</a>
-            </h5>
-            <ul class="footer-col-list">
-              <li class="item">
-                <a href="">About</a>
-              </li>
-              <li class="item">
-                <a href="">Press</a>
-              </li>
-              <li class="item">
-                <a href="">Work Here</a>
-              </li>
-              <li class="item">
-                <a href="">Legal</a>
-              </li>
-              <li class="item">
-                <a href="">Privacy Policy</a>
-              </li>
-              <li class="item">
-                <a href="">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-col footer-cat-nav">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="static/css/style.css" />
+        <link
+            rel="shortcut icon"
+            href="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196"
+        />
+        <title>
+            Stack Overflow - Where Developers Learn, Share, & Build Careers
+        </title>
+    </head>
+    <body>
+        <header class="top-bar">
             <div>
-              <h5 class="footer-col-title">
-                <a href="https://stackexchange.com">
-                  Stack Exchange
-                  <br />
-                  Network
-                </a>
-              </h5>
-              <ul class="footer-col-list">
-                <li class="item">
-                  <a href="#" class="footer-cat-expandable">Technology</a>
-                </li>
-                <li class="item">
-                  <a href="#" class="footer-cat-expandable">Life / Arts</a>
-                </li>
-                <li class="item">
-                  <a href="#" class="footer-cat-expandable"
-                    >Culture / Recreation
-                  </a>
-                </li>
-                <li class="item">
-                  <a href="#" class="footer-cat-expandable">Science</a>
-                </li>
-                <li class="item">
-                  <a href="#" class="footer-cat-expandable">Other</a>
-                </li>
-              </ul>
+                <div id="grid-cell">
+                    <a href="#">
+                        <div id="menu-icon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </a>
+                    <a href="https://stackoverflow.com" class="logo">
+                        <span>StackOverflow</span>
+                    </a>
+                </div>
+                <ol class="list-reset grid" id="top-menu">
+                    <li>
+                        <a>Products</a>
+                    </li>
+                    <li>
+                        <a href="">Customers</a>
+                    </li>
+                    <li>
+                        <a href="">Use Cases</a>
+                    </li>
+                </ol>
+                <form action="" id="search">
+                    <div>
+                        <input type="text" placeholder="Search..." />
+                        <svg
+                            aria-hidden="true"
+                            class="s-input-icon s-input-icon__search svg-icon iconSearch"
+                            width="18"
+                            height="18"
+                            viewBox="0 0 18 18"
+                        >
+                            <path
+                                d="M18 16.5l-5.14-5.18h-.35a7 7 0 10-1.19 1.19v.35L16.5 18l1.5-1.5zM12 7A5 5 0 112 7a5 5 0 0110 0z"
+                            ></path>
+                        </svg>
+                    </div>
+                </form>
+                <ol class="list-reset grid" id="login-signup">
+                    <li>
+                        <a href="" class="s-btn" id="log-in">Log in</a>
+                        <a href="" class="s-btn" id="sign-up">Sign up</a>
+                    </li>
+                </ol>
             </div>
-          </div>
-        </nav>
-        <div id="footer-copyright">
-          <ul class="footer-col-list">
-            <li class="item">
-              <a href="https://stackoverflow.blog?blb=1">Blog</a>
-            </li>
-            <li class="item">
-              <a href="https://www.facebook.com/officialstackoverflow/"
-                >Facebook</a
-              >
-            </li>
-            <li class="item">
-              <a href="https://twitter.com/stackoverflow">Twitter</a>
-            </li>
-            <li class="item">
-              <a href="https://linkedin.com/company/stack-overflow">LinkedIn</a>
-            </li>
-            <li class="item">
-              <a href="https://www.instagram.com/thestackoverflow">Instagram</a>
-            </li>
-          </ul>
-          <p>
-            site design / logo © 2020 Stack Exchange Inc; user contributions
-            licensed under
-            <a href="https://stackoverflow.com/help/licensing">cc by-sa</a>
-            .
-            <span id="svnrev">rev 2020.7.29.37299</span>
-          </p>
+        </header>
+        <div class="container">
+            <div id="content">
+                <div class="py128" id="product-hero-background">
+                    <h1 class="f-bold" id="phb-title">
+                        We
+                        <span> <3 </span>
+                        people who code
+                    </h1>
+                    <p>
+                        We build products that empower developers and connect
+                        them to solutions that enable productivity, growth, and
+                        discovery.
+                    </p>
+                    <div class="grid">
+                        <a href="" class="py12 px24">
+                            For developers
+                        </a>
+                        <a href="" class="py12 px24">
+                            For businesses
+                        </a>
+                    </div>
+                </div>
+                <div class="py64 ta-center" id="for-developers">
+                    <h2 class="f-bold fs-headline2">
+                        For developers, by developers
+                    </h2>
+                    <div class="small-bar"></div>
+                    <p class="ta-center mx-auto">
+                        Stack Overflow is an
+                        <a href="" class="fc-orange">open community</a> for
+                        anyone that codes. We help you get answers to your
+                        toughest coding questions, share knowledge with your
+                        coworkers in private, and find your next dream job.
+                    </p>
+                    <div class="grid mx-auto" id="qa-grid">
+                        <div class="center-grid-item">
+                            <img
+                                class="mb16"
+                                src="https://cdn.sstatic.net/Img/home/public-qa.svg?v=d82acaa7df9f"
+                            />
+                            <h4>Public Q&A</h4>
+                            <p class="mb24">
+                                Get answers to more than 16.5 million questions
+                                and give back by sharing your knowledge with
+                                others.
+                                <a href="" class="fc-orange">Sign up</a> for an
+                                account.
+                            </p>
+                            <a href="" class="py12 px24">Browse questions</a>
+                        </div>
+                        <div class="center-grid-item">
+                            <img
+                                class="mb16"
+                                src="https://cdn.sstatic.net/Img/home/private-qa.svg?v=2c1de180b6d7"
+                            />
+                            <h4>Private Q&A</h4>
+                            <p class="mb24">
+                                Level up with Stack Overflow while you work.
+                                Share knowledge privately with your coworkers
+                                using our flagship Q&A engine.
+                            </p>
+                            <a href="" class="py12 px24">Try for free</a>
+                        </div>
+                        <div class="center-grid-item">
+                            <img
+                                class="mb16"
+                                src="https://cdn.sstatic.net/Img/home/jobs.svg?v=931d6c0863ee"
+                            />
+                            <h4>Browse jobs</h4>
+                            <p class="mb24">
+                                Find the right job through high quality listings
+                                and search for roles based on title, technology
+                                stack, salary, location, and more.
+                            </p>
+                            <a href="" class="py12 px24">Find a job</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="py128" id="for-businesses">
+                    <h2 class="mx-auto mb24 f-bold ta-center fs-headline2 w90">
+                        For businesses, by developers
+                    </h2>
+                    <div class="small-bar"></div>
+                    <p class="ta-center mx-auto mb64 w90">
+                        Our mission is to help developers write the script of
+                        the future. This means helping you find and hire skilled
+                        developers for your business and providing them the
+                        tools they need to share knowledge and work effectively.
+                    </p>
+                    <div class="grid grid__center mx-auto w90 wmx12">
+                        <div
+                            class="grid grid__center bg-white bar-lg bs-md p32 fd-column wmx4 fl-bs3"
+                        >
+                            <div class="mr16 mb16">
+                                <img
+                                    class="d-block"
+                                    src="https://cdn.sstatic.net/Img/home/private-questions.svg?v=a4f1cfb08f7e"
+                                    width="76"
+                                />
+                            </div>
+                            <p class="mb0 wmx2">
+                                Quickly find and share internal knowledge with
+                                <a href="" class="fc-orange">Private Q&A</a>
+                            </p>
+                        </div>
+                        <div
+                            class="grid grid__center bg-white bar-lg fd-column bs-md p32 mx48 wmx4 fl-bs3"
+                        >
+                            <div class="mr16 mb16">
+                                <img
+                                    class="d-block"
+                                    src="https://cdn.sstatic.net/Img/home/find-candidate.svg?v=9099aa106ad3"
+                                    width="76"
+                                />
+                            </div>
+                            <p class="mb0 wmx2">
+                                Find the perfect candidate for your growing
+                                technical team with
+                                <a href="" class="fc-orange"
+                                    >Talent solutions</a
+                                >
+                            </p>
+                        </div>
+                        <div
+                            class="grid grid__center bg-white bar-lg fd-column bs-md p32 wmx4 fl-bs3"
+                        >
+                            <div class="mr16 mb16">
+                                <img
+                                    class="d-block"
+                                    src="https://cdn.sstatic.net/Img/home/accelerate.svg?v=9d4c2786ff02"
+                                    width="76"
+                                />
+                            </div>
+                            <p class="mb0 wmx2">
+                                Accelerate the discovery of your products or
+                                services through our
+                                <a href="" class="fc-orange"
+                                    >Advertising platform</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </footer>
-  </body>
+        <footer>
+            <div id="footer-container">
+                <div id="footer-logo">
+                    <a href="https://stackoverflow.com">
+                        <svg
+                            aria-hidden="true"
+                            class="svg-icon"
+                            width="32"
+                            height="37"
+                            viewBox="0 0 32 37"
+                        >
+                            <path
+                                d="M26 33v-9h4v13H0V24h4v9h22z"
+                                fill="#BCBBBB"
+                            ></path>
+                            <path
+                                d="M21.5 0l-2.7 2 9.9 13.3 2.7-2L21.5 0zM26 18.4L13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5zM9.1 15.2l15 7 1.4-3-15-7-1.4 3zm14 10.79l.68-2.95-16.1-3.35L7 23l16.1 2.99zM23 30H7v-3h16v3z"
+                                fill="#F48024"
+                            ></path>
+                        </svg>
+                    </a>
+                </div>
+                <nav id="footer-nav">
+                    <div class="footer-col">
+                        <h5 class="footer-col-title">
+                            <a href="https://stackoverflow.com"
+                                >Stack Overflow</a
+                            >
+                        </h5>
+                        <ul class="footer-col-list">
+                            <li class="item">
+                                <a href="">Questions</a>
+                            </li>
+                            <li class="item">
+                                <a href="">Jobs</a>
+                            </li>
+                            <li class="item">
+                                <a href="">Developer Jobs Directory</a>
+                            </li>
+                            <li class="item">
+                                <a href="">Salary Calculator</a>
+                            </li>
+                            <li class="item">
+                                <a href="">Help</a>
+                            </li>
+                            <li class="item">
+                                <a href="">Mobile</a>
+                            </li>
+                            <li class="item">
+                                <a href="">Disable Responsiveness</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5 class="footer-col-title">
+                            <a href="https://stackoverflowbusiness.com"
+                                >Products</a
+                            >
+                        </h5>
+                        <ul class="footer-col-list">
+                            <li class="item">
+                                <a href="">Teams</a>
+                            </li>
+                            <li class="item">
+                                <a href="">Talent</a>
+                            </li>
+                            <li class="item">
+                                <a href="">Advertising</a>
+                            </li>
+                            <li class="item">
+                                <a href="">Enterprise</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5 class="footer-col-title">
+                            <a href="https://stackoverflow.com/company/about"
+                                >Company</a
+                            >
+                        </h5>
+                        <ul class="footer-col-list">
+                            <li class="item">
+                                <a href="">About</a>
+                            </li>
+                            <li class="item">
+                                <a href="">Press</a>
+                            </li>
+                            <li class="item">
+                                <a href="">Work Here</a>
+                            </li>
+                            <li class="item">
+                                <a href="">Legal</a>
+                            </li>
+                            <li class="item">
+                                <a href="">Privacy Policy</a>
+                            </li>
+                            <li class="item">
+                                <a href="">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col footer-cat-nav">
+                        <div>
+                            <h5 class="footer-col-title">
+                                <a href="https://stackexchange.com">
+                                    Stack Exchange
+                                    <br />
+                                    Network
+                                </a>
+                            </h5>
+                            <ul class="footer-col-list">
+                                <li class="item">
+                                    <a href="#" class="footer-cat-expandable"
+                                        >Technology</a
+                                    >
+                                </li>
+                                <li class="item">
+                                    <a href="#" class="footer-cat-expandable"
+                                        >Life / Arts</a
+                                    >
+                                </li>
+                                <li class="item">
+                                    <a href="#" class="footer-cat-expandable"
+                                        >Culture / Recreation
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="#" class="footer-cat-expandable"
+                                        >Science</a
+                                    >
+                                </li>
+                                <li class="item">
+                                    <a href="#" class="footer-cat-expandable"
+                                        >Other</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div id="footer-copyright">
+                    <ul class="footer-col-list">
+                        <li class="item">
+                            <a href="https://stackoverflow.blog?blb=1">Blog</a>
+                        </li>
+                        <li class="item">
+                            <a
+                                href="https://www.facebook.com/officialstackoverflow/"
+                                >Facebook</a
+                            >
+                        </li>
+                        <li class="item">
+                            <a href="https://twitter.com/stackoverflow"
+                                >Twitter</a
+                            >
+                        </li>
+                        <li class="item">
+                            <a
+                                href="https://linkedin.com/company/stack-overflow"
+                                >LinkedIn</a
+                            >
+                        </li>
+                        <li class="item">
+                            <a href="https://www.instagram.com/thestackoverflow"
+                                >Instagram</a
+                            >
+                        </li>
+                    </ul>
+                    <p>
+                        site design / logo © 2020 Stack Exchange Inc; user
+                        contributions licensed under
+                        <a href="https://stackoverflow.com/help/licensing"
+                            >cc by-sa</a
+                        >
+                        .
+                        <span id="svnrev">rev 2020.7.29.37299</span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
