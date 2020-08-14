@@ -1,390 +1,577 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="static/css/style.css" />
-        <link
-            rel="shortcut icon"
-            href="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196"
-        />
-        <title>
-            Stack Overflow - Where Developers Learn, Share, & Build Careers
-        </title>
-    </head>
-    <body>
-        <header class="top-bar">
-            <div>
-                <div id="grid-cell">
-                    <a href="#">
-                        <div id="menu-icon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </a>
-                    <a href="https://stackoverflow.com" class="logo">
-                        <span>StackOverflow</span>
-                    </a>
-                </div>
-                <ol class="list-reset grid" id="top-menu">
-                    <li>
-                        <a>Products</a>
-                    </li>
-                    <li>
-                        <a href="">Customers</a>
-                    </li>
-                    <li>
-                        <a href="">Use Cases</a>
-                    </li>
-                </ol>
-                <form action="" id="search">
-                    <div>
-                        <input type="text" placeholder="Search..." />
-                        <svg
-                            aria-hidden="true"
-                            class="s-input-icon s-input-icon__search svg-icon iconSearch"
-                            width="18"
-                            height="18"
-                            viewBox="0 0 18 18"
-                        >
-                            <path
-                                d="M18 16.5l-5.14-5.18h-.35a7 7 0 10-1.19 1.19v.35L16.5 18l1.5-1.5zM12 7A5 5 0 112 7a5 5 0 0110 0z"
-                            ></path>
-                        </svg>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196" />
+    <title>
+        Stack Overflow - Where Developers Learn, Share, & Build Careers
+    </title>
+</head>
+
+<body>
+    <header class="top-bar">
+        <div>
+            <div id="grid-cell">
+                <a href="#">
+                    <div id="menu-icon">
+                        <div></div>
+                        <div></div>
+                        <div></div>
                     </div>
-                </form>
-                <ol class="list-reset grid" id="login-signup">
-                    <li>
-                        <a href="" class="s-btn" id="log-in">Log in</a>
-                        <a href="" class="s-btn" id="sign-up">Sign up</a>
-                    </li>
-                </ol>
+                </a>
+                <a href="https://stackoverflow.com" class="logo">
+                    <span>StackOverflow</span>
+                </a>
             </div>
-        </header>
-        <div class="container">
-            <div id="content">
-                <div class="py128" id="product-hero-background">
-                    <h1 class="f-bold" id="phb-title">
-                        We
-                        <span> <3 </span>
-                        people who code
-                    </h1>
-                    <p>
-                        We build products that empower developers and connect
-                        them to solutions that enable productivity, growth, and
-                        discovery.
-                    </p>
-                    <div class="grid">
-                        <a href="" class="py12 px24">
-                            For developers
-                        </a>
-                        <a href="" class="py12 px24">
-                            For businesses
-                        </a>
+            <ol class="list-reset grid" id="top-menu">
+                <li>
+                    <a>Products</a>
+                </li>
+                <li>
+                    <a href="">Customers</a>
+                </li>
+                <li>
+                    <a href="">Use Cases</a>
+                </li>
+            </ol>
+            <form action="" id="search">
+                <div>
+                    <input type="text" placeholder="Search..." />
+                    <svg aria-hidden="true" class="s-input-icon s-input-icon__search svg-icon iconSearch" width="18"
+                        height="18" viewBox="0 0 18 18">
+                        <path
+                            d="M18 16.5l-5.14-5.18h-.35a7 7 0 10-1.19 1.19v.35L16.5 18l1.5-1.5zM12 7A5 5 0 112 7a5 5 0 0110 0z">
+                        </path>
+                    </svg>
+                </div>
+            </form>
+            <ol class="list-reset grid" id="login-signup">
+                <li>
+                    <a href="" class="s-btn" id="log-in">Log in</a>
+                    <a href="" class="s-btn" id="sign-up">Sign up</a>
+                </li>
+            </ol>
+        </div>
+    </header>
+    <div class="container">
+        <div id="content">
+            <div class="py128" id="product-hero-background">
+                <h1 class="f-bold" id="phb-title">
+                    We
+                    <span>
+                        <3 </span>
+                            people who code
+                </h1>
+                <p>
+                    We build products that empower developers and connect
+                    them to solutions that enable productivity, growth, and
+                    discovery.
+                </p>
+                <div class="grid">
+                    <a href="" class="py12 px24">
+                        For developers
+                    </a>
+                    <a href="" class="py12 px24">
+                        For businesses
+                    </a>
+                </div>
+            </div>
+            <div class="py64 ta-center" id="for-developers">
+                <h2 class="f-bold fs-headline2">
+                    For developers, by developers
+                </h2>
+                <div class="small-bar"></div>
+                <p class="ta-center mx-auto">
+                    Stack Overflow is an
+                    <a href="" class="fc-orange">open community</a> for
+                    anyone that codes. We help you get answers to your
+                    toughest coding questions, share knowledge with your
+                    coworkers in private, and find your next dream job.
+                </p>
+                <div class="grid mx-auto" id="qa-grid">
+                    <div class="center-grid-item">
+                        <img class="mb16" src="https://cdn.sstatic.net/Img/home/public-qa.svg?v=d82acaa7df9f" />
+                        <h4>Public Q&A</h4>
+                        <p class="mb24">
+                            Get answers to more than 16.5 million questions
+                            and give back by sharing your knowledge with
+                            others.
+                            <a href="" class="fc-orange">Sign up</a> for an
+                            account.
+                        </p>
+                        <a href="" class="py12 px24">Browse questions</a>
+                    </div>
+                    <div class="center-grid-item">
+                        <img class="mb16" src="https://cdn.sstatic.net/Img/home/private-qa.svg?v=2c1de180b6d7" />
+                        <h4>Private Q&A</h4>
+                        <p class="mb24">
+                            Level up with Stack Overflow while you work.
+                            Share knowledge privately with your coworkers
+                            using our flagship Q&A engine.
+                        </p>
+                        <a href="" class="py12 px24">Try for free</a>
+                    </div>
+                    <div class="center-grid-item">
+                        <img class="mb16" src="https://cdn.sstatic.net/Img/home/jobs.svg?v=931d6c0863ee" />
+                        <h4>Browse jobs</h4>
+                        <p class="mb24">
+                            Find the right job through high quality listings
+                            and search for roles based on title, technology
+                            stack, salary, location, and more.
+                        </p>
+                        <a href="" class="py12 px24">Find a job</a>
                     </div>
                 </div>
-                <div class="py64 ta-center" id="for-developers">
-                    <h2 class="f-bold fs-headline2">
-                        For developers, by developers
-                    </h2>
-                    <div class="small-bar"></div>
-                    <p class="ta-center mx-auto">
-                        Stack Overflow is an
-                        <a href="" class="fc-orange">open community</a> for
-                        anyone that codes. We help you get answers to your
-                        toughest coding questions, share knowledge with your
-                        coworkers in private, and find your next dream job.
-                    </p>
-                    <div class="grid mx-auto" id="qa-grid">
-                        <div class="center-grid-item">
-                            <img
-                                class="mb16"
-                                src="https://cdn.sstatic.net/Img/home/public-qa.svg?v=d82acaa7df9f"
-                            />
-                            <h4>Public Q&A</h4>
-                            <p class="mb24">
-                                Get answers to more than 16.5 million questions
-                                and give back by sharing your knowledge with
-                                others.
-                                <a href="" class="fc-orange">Sign up</a> for an
-                                account.
-                            </p>
-                            <a href="" class="py12 px24">Browse questions</a>
+            </div>
+            <div class="py128" id="for-businesses">
+                <h2 class="mx-auto mb24 f-bold ta-center fs-headline2 w90">
+                    For businesses, by developers
+                </h2>
+                <div class="small-bar"></div>
+                <p class="ta-center mx-auto mb64 w90">
+                    Our mission is to help developers write the script of
+                    the future. This means helping you find and hire skilled
+                    developers for your business and providing them the
+                    tools they need to share knowledge and work effectively.
+                </p>
+                <div class="grid grid__center mx-auto w90 wmx12">
+                    <div class="grid grid__center bg-white bar-lg bs-md p32 fd-column wmx4 fl-bs3">
+                        <div class="mr16 mb16">
+                            <img class="d-block"
+                                src="https://cdn.sstatic.net/Img/home/private-questions.svg?v=a4f1cfb08f7e"
+                                width="76" />
                         </div>
-                        <div class="center-grid-item">
-                            <img
-                                class="mb16"
-                                src="https://cdn.sstatic.net/Img/home/private-qa.svg?v=2c1de180b6d7"
-                            />
-                            <h4>Private Q&A</h4>
-                            <p class="mb24">
-                                Level up with Stack Overflow while you work.
-                                Share knowledge privately with your coworkers
-                                using our flagship Q&A engine.
-                            </p>
-                            <a href="" class="py12 px24">Try for free</a>
+                        <p class="mb0 wmx2">
+                            Quickly find and share internal knowledge with
+                            <a href="" class="fc-orange">Private Q&A</a>
+                        </p>
+                    </div>
+                    <div class="grid grid__center bg-white bar-lg fd-column bs-md p32 mx48 wmx4 fl-bs3">
+                        <div class="mr16 mb16">
+                            <img class="d-block"
+                                src="https://cdn.sstatic.net/Img/home/find-candidate.svg?v=9099aa106ad3" width="76" />
                         </div>
-                        <div class="center-grid-item">
-                            <img
-                                class="mb16"
-                                src="https://cdn.sstatic.net/Img/home/jobs.svg?v=931d6c0863ee"
-                            />
-                            <h4>Browse jobs</h4>
-                            <p class="mb24">
-                                Find the right job through high quality listings
-                                and search for roles based on title, technology
-                                stack, salary, location, and more.
-                            </p>
-                            <a href="" class="py12 px24">Find a job</a>
+                        <p class="mb0 wmx2">
+                            Find the perfect candidate for your growing
+                            technical team with
+                            <a href="" class="fc-orange">Talent solutions</a>
+                        </p>
+                    </div>
+                    <div class="grid grid__center bg-white bar-lg fd-column bs-md p32 wmx4 fl-bs3">
+                        <div class="mr16 mb16">
+                            <img class="d-block" src="https://cdn.sstatic.net/Img/home/accelerate.svg?v=9d4c2786ff02"
+                                width="76" />
+                        </div>
+                        <p class="mb0 wmx2">
+                            Accelerate the discovery of your products or
+                            services through our
+                            <a href="" class="fc-orange">Advertising platform</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- 4th section -->
+            <div class="py128 px32" id="for-teams">
+                <h2 class="w90 wmx5 mx-auto fc-white ta-center mb24 f-bold fs-h2">
+                    Unlock siloed knowledge with Stack overflow for Teams
+                </h2>
+                <div class="mb32"></div>
+                <p class="mb24 w90 mx-auto wmx4 ta-center fc-white fs3">
+                    Wikis, chat messages, or formal documentation for
+                    knowledge management aren't effective. Our question and
+                    answer format is a proven approach for accessing the
+                    right information in less time.
+                </p>
+                <p class="ta-center mb24">
+                    <a href="/" class="fs2 d-inline-block fc-white bg-orange py12 px24 bar-sm">
+                        Learn more</a>
+                </p>
+                <!-- cards -->
+                <div class="mx-auto wmx12 pt32">
+                    <div class="pb12" style="
+                                background-image: url(https://cdn.sstatic.net/Img/product/teams/illo-teams-pricing.svg?v=8afb8ac7c580);
+                            " id="for-teams-cards">
+                        <div class="grid frid__fl1 gs32 mx128 ff-row-wrap">
+                            <div class="d-flex fd-column wmn2 pt2 pb16 fl-bs3 m16">
+                                <div class="mt32 h100 p24 bg-white ba bar-lg bs-sm fs2 d-flex fd-column">
+                                    <h2 class="px8 py4 as-start bar-sm fs3 f-mid bg-black-150 fc-black-750">
+                                        Basic
+                                    </h2>
+                                    <p class="h32 mb24">
+                                        Private knowledge base for teams
+                                    </p>
+                                    <div class="bb bc-black-2 pb24 mb24">
+                                        <div class="f-bold fs-h2 lh-xs pt12 mb6">
+                                            $6 USD
+                                        </div>
+                                        <div class="fs2 fc-black-350"> per teamate / month </div>
+                                    </div>
+                                    <div class="d-flex mb12">
+                                        <div class="mr12">
+                                            <svg aria-hidden="true" class="svg-icon iconCalendar" width="18" height="18"
+                                                viewBox="0 0 18 18">
+                                                <path
+                                                    d="M14 2h1a2 2 0 012 2v11a2 2 0 01-2 2H3a2 2 0 01-2-2V4c0-1.1.9-2 2-2h1V0h2v2h6V0h2v2zM3 6v9h12V6H3zm2 2h2v2H5V8zm0 3h2v2H5v-2zm3 0h2v2H8v-2zm3 0h2v2h-2v-2zm0-3h2v2h-2V8zM8 8h2v2H8V8z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div>Free 30 day trial</div>
+                                    </div>
+                                    <div class="d-flex mb12">
+                                        <div class="mr12">
+                                            <svg aria-hidden="true" class="svg-icon iconShield" width="18" height="18"
+                                                viewBox="0 0 18 18">
+                                                <path
+                                                    d="M2 4l7-3 7 3v5.02C16 13.69 10.69 17 9 17c-1.69 0-7-3.31-7-7.98V4zm6.14 5.2L7 12h4L9.86 9.2a.58.58 0 01.25-.59c.56-.36.89-.95.89-1.61 0-1.09-.94-2-2.02-2A2 2 0 007 7c0 .66.33 1.25.89 1.61.2.13.3.36.25.59z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div>Your own private space hosted on stackoverflow.com</div>
+                                    </div>
+                                    <div class="d-flex md12">
+                                        <div class="mr12">
+                                            <svg aria-hidden="true" class="svg-icon iconArchive" width="18" height="18"
+                                                viewBox="0 0 18 18">
+                                                <path
+                                                    d="M3 1a2 2 0 00-2 2v1h16V3a2 2 0 00-2-2H3zM2 5h14v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm4 3a1 1 0 001 1h4a1 1 0 100-2H7a1 1 0 00-1 1z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div>Fully searchable archieve</div>
+                                    </div>
+                                    <div class="mt-auto">
+                                        <a href=""
+                                            class="s-btn mt24 d-block fs2 px32 bar-md f-bold bg-black-100 as-stretch fc-black-750">
+                                            Get started for free
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex fd-column wmn2 pb16 bg-bottom bg-no-repeat bg-contain fl-bs3 m16"
+                                style="background-image:url(https://cdn.sstatic.net/Img/product/teams/illo-teams-pricing-shadow.svg?v=9954fe201b05)">
+                                <div class="px16 py8 bg-black-075 bl bt br bc-black-100 btr-lg bs-sm fs2 mx16 f-bold">
+                                    <svg aria-hidden="true" class="float-right svg-icon iconIndustry" width="18"
+                                        height="18" viewBox="0 0 18 18">
+                                        <path
+                                            d="M10 16v-4H8v4H2V4c0-1.1.9-2 2-2h6a2 2 0 012 2v2h2a2 2 0 012 2v8h-6zM4 4v2h2V4H4zm0 4v2h2V8H4zm4-4v2h2V4H8zm0 4v2h2V8H8zm-4 4v2h2v-2H4zm8 0v2h2v-2h-2zm0-4v2h2V8h-2z">
+                                        </path>
+                                    </svg>
+                                    MOST USED
+                                </div>
+                                <div class="p24 h100 bg-black-025 ba bc-black-100 bar-lg fs2 d-flex fd-column">
+                                    <h2 class="px8 py4 as-start bar-sm bg-black-700 fc-white fs3">
+                                        Business
+                                    </h2>
+                                    <p class="h32 mb24">
+                                        Private knowledge base with SSO and premium features
+                                    </p>
+                                    <div class="bb bc-black-100 pb24 mb24">
+                                        <div class="f-bold fs-h2 lh-xs pt12 mb6">
+                                            $12 USD
+                                        </div>
+                                        <div class="fc-black-350 fs2">per teammate / month</div>
+                                    </div>
+                                    <div class="d-flex mb12">
+                                        <div class="mr12">
+                                            <svg aria-hidden="true" class="svg-icon iconKeySmall" width="18" height="18"
+                                                viewBox="0 0 18 18">
+                                                <path
+                                                    d="M8.83 10a3 3 0 110-2H15v2h-2v2h-2v-2H8.83zM6 10.3a1.3 1.3 0 100-2.6 1.3 1.3 0 000 2.6z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div>Single sign-on (SSO) with SAML</div>
+                                    </div>
+                                    <div class="d-flex mb12">
+                                        <div class="mr12">
+                                            <svg aria-hidden="true" class="svg-icon iconGraph" width="18" height="18"
+                                                viewBox="0 0 18 18">
+                                                <path
+                                                    d="M3 1h12a2 2 0 012 2v12a2 2 0 01-2 2H3a2 2 0 01-2-2V3c0-1.1.9-2 2-2zm1 8v5h2V9H4zm4-5v10h2V4H8zm4 3v7h2V7h-2z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div>Reporting and analytic</div>
+                                    </div>
+                                    <div class="d-flex mb12">
+                                        <div class="mr12">
+                                            <svg aria-hidden="true" class="svg-icon iconHealth" width="18" height="18"
+                                                viewBox="0 0 18 18">
+                                                <path
+                                                    d="M9 1L2 4v5.02C2 13.69 7.31 17 9 17c1.69 0 7-3.31 7-7.98V4L9 1zm1 9v3H8v-3H5V8h3V5h2v3h3v2h-3z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div>Priority customer support</div>
+                                    </div>
+                                    <div class="d-flex mb12">
+                                        <div class="mr12">
+                                            <svg aria-hidden="true" class="svg-icon iconStar" width="18" height="18"
+                                                viewBox="0 0 18 18">
+                                                <path
+                                                    d="M8.63.95a.4.4 0 01.74 0l2.05 4.93a.4.4 0 00.34.24l5.32.43c.35.03.5.47.22.7l-4.05 3.47a.4.4 0 00-.13.4l1.24 5.2a.4.4 0 01-.6.43l-4.55-2.79a.4.4 0 00-.42 0l-4.55 2.79a.4.4 0 01-.6-.44l1.24-5.19a.4.4 0 00-.13-.4L.7 7.25a.4.4 0 01.22-.7l5.32-.43a.4.4 0 00.34-.24L8.63.95z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div>99.5% uptime</div>
+                                    </div>
+                                    <div class="d-flex mb12 fc-black-350">
+                                        <div class="mr12">
+                                            <svg aria-hidden="true" class="svg-icon iconPlus" width="18" height="18"
+                                                viewBox="0 0 18 18">
+                                                <path d="M10 2H8v6H2v2h6v6h2v-6h6V8h-6V2z"></path>
+                                            </svg>
+                                        </div>
+                                        <div>All the features of Basic tier</div>
+                                    </div>
+                                    <div class="mx-auto">
+                                        <a href=""
+                                            class="s-btn mt24 d-block as-stretch fs2 px32 bar-md f-bold bg-black-700 fc-white">
+                                            Get started
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex fd-column wmn2 pt2 pb16 fl-bs3 m16">
+                                <div class="mt32 h100 p24 bg-white ba bar-lg bs-sm fs2 d-flex fd-column">
+                                    <h2 class="px8 py4 as-start bar-sm fs3 f-mid bg-purple fc-white">
+                                        Enterprise
+                                    </h2>
+                                    <p class="h32 mb24">
+                                        Standalone knowledge base with enhanced security and flexible hosting
+                                    </p>
+                                    <div class="bb bc-black-2 pb24 mb24">
+                                        <div class="f-bold fs-h2 lh-xs pt12 mb6">
+                                            Custom pricing
+                                        </div>
+                                        <div class="fs2 fc-black-350"> Let's talk about what you need </div>
+                                    </div>
+                                    <div class="d-flex mb12">
+                                        <div class="mr12"><svg aria-hidden="true" class="svg-icon iconKeySmall"
+                                                width="18" height="18" viewBox="0 0 18 18">
+                                                <path
+                                                    d="M8.83 10a3 3 0 110-2H15v2h-2v2h-2v-2H8.83zM6 10.3a1.3 1.3 0 100-2.6 1.3 1.3 0 000 2.6z">
+                                                </path>
+                                            </svg></div>
+                                        <div>Single sign-on with AD or SAML</div>
+                                    </div>
+                                    <div class="d-flex mb12">
+                                        <div class="mr12"><svg aria-hidden="true" class="svg-icon iconPeak" width="18"
+                                                height="18" viewBox="0 0 18 18">
+                                                <path d="M10.5 3.5L8 7.25l2 2.25L8.5 11l-3-3.5L1 14h16L10.5 3.5z">
+                                                </path>
+                                            </svg></div>
+                                        <div>Host on your cloud or servers - or our private managed cloud</div>
+                                    </div>
+                                    <div class="d-flex md12">
+                                        <div class="mr12"><svg aria-hidden="true" class="svg-icon iconCode" width="18"
+                                                height="18" viewBox="0 0 18 18">
+                                                <path
+                                                    d="M8 4.41L6.59 3l-6 6 6 6L8 13.59 3.41 9 8 4.41zm2 0L11.41 3l6 6-6 6L10 13.59 14.59 9 10 4.41z">
+                                                </path>
+                                            </svg></div>
+                                        <div>Robust read and write API</div>
+                                    </div>
+                                    <div class="d-flex md12">
+                                        <div class="mr12"><svg aria-hidden="true" class="svg-icon iconPerson" width="18"
+                                                height="18" viewBox="0 0 18 18">
+                                                <path
+                                                    d="M15 15a1 1 0 01-1 1H4a1 1 0 01-1-1v-1c0-2.63 4-4 4-4s.23-.4 0-1c-.84-.62-.94-1.59-1-4 .17-2.41 1.87-3 3-3s2.83.59 3 3c-.06 2.41-.16 3.38-1 4-.23.59 0 1 0 1s4 1.37 4 4v1z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div>Your own customer success and community building representative</div>
+                                    </div>
+                                    <div class="d-flex md12">
+                                        <div class="mr12"><svg aria-hidden="true" class="svg-icon iconStar" width="18"
+                                                height="18" viewBox="0 0 18 18">
+                                                <path
+                                                    d="M8.63.95a.4.4 0 01.74 0l2.05 4.93a.4.4 0 00.34.24l5.32.43c.35.03.5.47.22.7l-4.05 3.47a.4.4 0 00-.13.4l1.24 5.2a.4.4 0 01-.6.43l-4.55-2.79a.4.4 0 00-.42 0l-4.55 2.79a.4.4 0 01-.6-.44l1.24-5.19a.4.4 0 00-.13-.4L.7 7.25a.4.4 0 01.22-.7l5.32-.43a.4.4 0 00.34-.24L8.63.95z">
+                                                </path>
+                                            </svg></div>
+                                        <div>99.5% uptime SLA and priority support</div>
+                                    </div>
+                                    <div class="mt-auto">
+                                        <a href=""
+                                            class="s-btn mt24 d-block fs2 px32 bar-md f-bold bg-purple as-stretch fc-white">
+                                            Request a demo
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="py128" id="for-businesses">
-                    <h2 class="mx-auto mb24 f-bold ta-center fs-headline2 w90">
-                        For businesses, by developers
-                    </h2>
-                    <div class="small-bar"></div>
-                    <p class="ta-center mx-auto mb64 w90">
-                        Our mission is to help developers write the script of
-                        the future. This means helping you find and hire skilled
-                        developers for your business and providing them the
-                        tools they need to share knowledge and work effectively.
-                    </p>
-                    <div class="grid grid__center mx-auto w90 wmx12">
-                        <div
-                            class="grid grid__center bg-white bar-lg bs-md p32 fd-column wmx4 fl-bs3"
-                        >
-                            <div class="mr16 mb16">
-                                <img
-                                    class="d-block"
-                                    src="https://cdn.sstatic.net/Img/home/private-questions.svg?v=a4f1cfb08f7e"
-                                    width="76"
-                                />
-                            </div>
-                            <p class="mb0 wmx2">
-                                Quickly find and share internal knowledge with
-                                <a href="" class="fc-orange">Private Q&A</a>
-                            </p>
-                        </div>
-                        <div
-                            class="grid grid__center bg-white bar-lg fd-column bs-md p32 mx48 wmx4 fl-bs3"
-                        >
-                            <div class="mr16 mb16">
-                                <img
-                                    class="d-block"
-                                    src="https://cdn.sstatic.net/Img/home/find-candidate.svg?v=9099aa106ad3"
-                                    width="76"
-                                />
-                            </div>
-                            <p class="mb0 wmx2">
-                                Find the perfect candidate for your growing
-                                technical team with
-                                <a href="" class="fc-orange"
-                                    >Talent solutions</a
-                                >
-                            </p>
-                        </div>
-                        <div
-                            class="grid grid__center bg-white bar-lg fd-column bs-md p32 wmx4 fl-bs3"
-                        >
-                            <div class="mr16 mb16">
-                                <img
-                                    class="d-block"
-                                    src="https://cdn.sstatic.net/Img/home/accelerate.svg?v=9d4c2786ff02"
-                                    width="76"
-                                />
-                            </div>
-                            <p class="mb0 wmx2">
-                                Accelerate the discovery of your products or
-                                services through our
-                                <a href="" class="fc-orange"
-                                    >Advertising platform</a
-                                >
-                            </p>
-                        </div>
-                    </div>
+                <div class="ta-center fs2 mt48">
+                    <a href="" class="d-inline-block mx24 my12 fc-black-200">
+                        <img class="d-inline-block va-middle mr8"
+                            src="https://cdn.sstatic.net/Img/product/teams/endorsements/g2.svg?v=670bf9279910"
+                            height="26" alt="G2">
+                        <strong class="f-bold">Leader</strong>
+                        Summer 2020
+                    </a>
+                    <a href="" class="d-inline-block mx24 my12 fc-black-200">
+                        <img class="d-inline-block va-middle mr8"
+                            src="https://cdn.sstatic.net/Img/product/teams/endorsements/g2.svg?v=670bf9279910"
+                            height="26" alt="G2">
+                        <strong class="f-bold">Users Love Us</strong>
+                    </a>
+                    <a href="" class="d-inline-block mx24 my12 fc-black-200">
+                        <img class="d-inline-block va-middle mr8"
+                            src="https://cdn.sstatic.net/Img/product/teams/endorsements/fastco.svg?v=5ebc802a76c7"
+                            height="21" alt="Fast Company">
+                        <strong class="f-bold">Most Innovative Companies</strong>
+                        2019
+                    </a>
                 </div>
             </div>
         </div>
-        <footer>
-            <div id="footer-container">
-                <div id="footer-logo">
-                    <a href="https://stackoverflow.com">
-                        <svg
-                            aria-hidden="true"
-                            class="svg-icon"
-                            width="32"
-                            height="37"
-                            viewBox="0 0 32 37"
-                        >
-                            <path
-                                d="M26 33v-9h4v13H0V24h4v9h22z"
-                                fill="#BCBBBB"
-                            ></path>
-                            <path
-                                d="M21.5 0l-2.7 2 9.9 13.3 2.7-2L21.5 0zM26 18.4L13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5zM9.1 15.2l15 7 1.4-3-15-7-1.4 3zm14 10.79l.68-2.95-16.1-3.35L7 23l16.1 2.99zM23 30H7v-3h16v3z"
-                                fill="#F48024"
-                            ></path>
-                        </svg>
-                    </a>
-                </div>
-                <nav id="footer-nav">
-                    <div class="footer-col">
-                        <h5 class="footer-col-title">
-                            <a href="https://stackoverflow.com"
-                                >Stack Overflow</a
-                            >
-                        </h5>
-                        <ul class="footer-col-list">
-                            <li class="item">
-                                <a href="">Questions</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Jobs</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Developer Jobs Directory</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Salary Calculator</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Help</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Mobile</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Disable Responsiveness</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h5 class="footer-col-title">
-                            <a href="https://stackoverflowbusiness.com"
-                                >Products</a
-                            >
-                        </h5>
-                        <ul class="footer-col-list">
-                            <li class="item">
-                                <a href="">Teams</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Talent</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Advertising</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Enterprise</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h5 class="footer-col-title">
-                            <a href="https://stackoverflow.com/company/about"
-                                >Company</a
-                            >
-                        </h5>
-                        <ul class="footer-col-list">
-                            <li class="item">
-                                <a href="">About</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Press</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Work Here</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Legal</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Privacy Policy</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col footer-cat-nav">
-                        <div>
-                            <h5 class="footer-col-title">
-                                <a href="https://stackexchange.com">
-                                    Stack Exchange
-                                    <br />
-                                    Network
-                                </a>
-                            </h5>
-                            <ul class="footer-col-list">
-                                <li class="item">
-                                    <a href="#" class="footer-cat-expandable"
-                                        >Technology</a
-                                    >
-                                </li>
-                                <li class="item">
-                                    <a href="#" class="footer-cat-expandable"
-                                        >Life / Arts</a
-                                    >
-                                </li>
-                                <li class="item">
-                                    <a href="#" class="footer-cat-expandable"
-                                        >Culture / Recreation
-                                    </a>
-                                </li>
-                                <li class="item">
-                                    <a href="#" class="footer-cat-expandable"
-                                        >Science</a
-                                    >
-                                </li>
-                                <li class="item">
-                                    <a href="#" class="footer-cat-expandable"
-                                        >Other</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-                <div id="footer-copyright">
+    </div>
+    <footer>
+        <div id="footer-container">
+            <div id="footer-logo">
+                <a href="https://stackoverflow.com">
+                    <svg aria-hidden="true" class="svg-icon" width="32" height="37" viewBox="0 0 32 37">
+                        <path d="M26 33v-9h4v13H0V24h4v9h22z" fill="#BCBBBB"></path>
+                        <path
+                            d="M21.5 0l-2.7 2 9.9 13.3 2.7-2L21.5 0zM26 18.4L13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5zM9.1 15.2l15 7 1.4-3-15-7-1.4 3zm14 10.79l.68-2.95-16.1-3.35L7 23l16.1 2.99zM23 30H7v-3h16v3z"
+                            fill="#F48024"></path>
+                    </svg>
+                </a>
+            </div>
+            <nav id="footer-nav">
+                <div class="footer-col">
+                    <h5 class="footer-col-title">
+                        <a href="https://stackoverflow.com">Stack Overflow</a>
+                    </h5>
                     <ul class="footer-col-list">
                         <li class="item">
-                            <a href="https://stackoverflow.blog?blb=1">Blog</a>
+                            <a href="">Questions</a>
                         </li>
                         <li class="item">
-                            <a
-                                href="https://www.facebook.com/officialstackoverflow/"
-                                >Facebook</a
-                            >
+                            <a href="">Jobs</a>
                         </li>
                         <li class="item">
-                            <a href="https://twitter.com/stackoverflow"
-                                >Twitter</a
-                            >
+                            <a href="">Developer Jobs Directory</a>
                         </li>
                         <li class="item">
-                            <a
-                                href="https://linkedin.com/company/stack-overflow"
-                                >LinkedIn</a
-                            >
+                            <a href="">Salary Calculator</a>
                         </li>
                         <li class="item">
-                            <a href="https://www.instagram.com/thestackoverflow"
-                                >Instagram</a
-                            >
+                            <a href="">Help</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Mobile</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Disable Responsiveness</a>
                         </li>
                     </ul>
-                    <p>
-                        site design / logo © 2020 Stack Exchange Inc; user
-                        contributions licensed under
-                        <a href="https://stackoverflow.com/help/licensing"
-                            >cc by-sa</a
-                        >
-                        .
-                        <span id="svnrev">rev 2020.7.29.37299</span>
-                    </p>
                 </div>
+                <div class="footer-col">
+                    <h5 class="footer-col-title">
+                        <a href="https://stackoverflowbusiness.com">Products</a>
+                    </h5>
+                    <ul class="footer-col-list">
+                        <li class="item">
+                            <a href="">Teams</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Talent</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Advertising</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Enterprise</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5 class="footer-col-title">
+                        <a href="https://stackoverflow.com/company/about">Company</a>
+                    </h5>
+                    <ul class="footer-col-list">
+                        <li class="item">
+                            <a href="">About</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Press</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Work Here</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Legal</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Privacy Policy</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-cat-nav">
+                    <div>
+                        <h5 class="footer-col-title">
+                            <a href="https://stackexchange.com">
+                                Stack Exchange
+                                <br />
+                                Network
+                            </a>
+                        </h5>
+                        <ul class="footer-col-list">
+                            <li class="item">
+                                <a href="#" class="footer-cat-expandable">Technology</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="footer-cat-expandable">Life / Arts</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="footer-cat-expandable">Culture / Recreation
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="footer-cat-expandable">Science</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="footer-cat-expandable">Other</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="footer-copyright">
+                <ul class="footer-col-list">
+                    <li class="item">
+                        <a href="https://stackoverflow.blog?blb=1">Blog</a>
+                    </li>
+                    <li class="item">
+                        <a href="https://www.facebook.com/officialstackoverflow/">Facebook</a>
+                    </li>
+                    <li class="item">
+                        <a href="https://twitter.com/stackoverflow">Twitter</a>
+                    </li>
+                    <li class="item">
+                        <a href="https://linkedin.com/company/stack-overflow">LinkedIn</a>
+                    </li>
+                    <li class="item">
+                        <a href="https://www.instagram.com/thestackoverflow">Instagram</a>
+                    </li>
+                </ul>
+                <p>
+                    site design / logo © 2020 Stack Exchange Inc; user
+                    contributions licensed under
+                    <a href="https://stackoverflow.com/help/licensing">cc by-sa</a>
+                    .
+                    <span id="svnrev">rev 2020.7.29.37299</span>
+                </p>
             </div>
-        </footer>
-    </body>
+        </div>
+    </footer>
+</body>
+
 </html>
