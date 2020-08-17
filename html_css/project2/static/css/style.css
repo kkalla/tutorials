@@ -208,6 +208,10 @@ p {
     background-color: var(--orange-400) !important;
 }
 
+.bg-powder-100 {
+    background-color: var(--powder-100) !important;
+}
+
 .bg-purple {
     background-color: #2b2d6e !important;
 }
@@ -223,6 +227,10 @@ p {
 .bl {
     border-left-style: solid !important;
     border-left-width: 1px !important;
+}
+
+.bn4 {
+    bottom: -4px !important;
 }
 
 .br {
@@ -542,6 +550,10 @@ p {
     margin-bottom: 64px;
 }
 
+.mr0 {
+    margin-right: 0px !important;
+}
+
 .mr8 {
     margin-right: 8px !important;
 }
@@ -552,6 +564,10 @@ p {
 
 .mr16 {
     margin-right: 16px !important;
+}
+
+.mr32 {
+    margin-right: 32px !important;
 }
 
 .mr64 {
@@ -612,6 +628,10 @@ p {
     padding: 12px !important;
 }
 
+.p16 {
+    padding: 16px !important;
+}
+
 .p24 {
     padding: 24px !important;
 }
@@ -630,6 +650,10 @@ p {
 
 .pb24 {
     padding-bottom: 24px !important;
+}
+
+.ps-absolute {
+    position: absolute !important;
 }
 
 .ps-relative {
@@ -686,6 +710,10 @@ p {
 .py12 {
     padding-top: 12px !important;
     padding-bottom: 12px !important;
+}
+
+.r64 {
+    right: 64px !important;
 }
 
 .top-bar {
@@ -791,6 +819,10 @@ p {
 
 .wmx2 {
     max-width: 16.2051282rem !important;
+}
+
+.wmx3 {
+    max-width: 24.3076923rem !important;
 }
 
 .wmx4 {
