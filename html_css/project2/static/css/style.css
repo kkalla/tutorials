@@ -196,6 +196,10 @@ p {
     background-color: #2b2d6e !important;
 }
 
+.bg-purple-light {
+    background-color: #f7f6f9 !important;
+}
+
 .bg-white {
     background-color: var(--white) !important;
 }
@@ -282,6 +286,10 @@ p {
     font-size: 1.30769231rem !important;
 }
 
+.hs-h1 {
+    font-size: 2.07692308rem !important;
+}
+
 .fs-h2 {
     font-size: 2.61538461rem !important;
 }
@@ -344,6 +352,10 @@ p {
 
 .mr16 {
     margin-right: 16px !important;
+}
+
+.mr64 {
+    margin-right: 64px !important;
 }
 
 .mx16 {
@@ -621,6 +633,10 @@ p {
     flex-basis: 33.33333%;
 }
 
+.fl-bs5 {
+    flex-basis: 50%;
+}
+
 .fd-column {
     flex-direction: column !important;
 }
@@ -734,6 +750,10 @@ p {
 
 .wmx5 {
     max-width: 40.5128205rem !important;
+}
+
+.wmx10 {
+    max-width: 81.025641rem !important;
 }
 
 .wmx12 {
