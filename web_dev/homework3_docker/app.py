@@ -26,20 +26,9 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-
 @app.route('/', methods=["GET"])
 def home():
     return render_template('index.html')
-
-
-@app.route('/signup', methods=["GET"])
-def signup():
-    return render_template('signup.html')
-
-
-@app.route('/signin', methods=["GET"])
-def signin():
-    return render_template('signin.html')
 
 
 @app.route('/about', methods=["GET"])

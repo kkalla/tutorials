@@ -5,6 +5,8 @@ services:
         image: postgres:13-alpine
         volumes: 
             - db_data:/var/lib/postgresql/data/
+            - ./schema.sql:/docker-entrypoint-initdb.d/1-schema.sql
+            - ./data.sql:/docker-entrypoint-initdb.d/2-data.sql
         environment:
             - POSTGRES_USER=kkalla
             - POSTGRES_PASSWORD=kkalla

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/style.css">
+    <title>This is demo flask app</title>
+</head>
+
+<body>
+    <a href="/">
+        <h1>Demo App</h1>
+    </a>
+
+    <div>
+        {% block main %}
+        <h1>This is only shows on structure.html</h1>
+
+
+        {% endblock main %}
+    </div>
+</body>
+
+</html>
