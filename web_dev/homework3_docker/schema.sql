@@ -1,0 +1,16 @@
+CREATE TABLE user (
+    email VARCHAR PRIMARY KEY,
+    password VARCHAR(32)
+)
+
+CREATE TABLE todo_list (
+    pk INTEGER PRIMARY KEY AUTOINCREMENT,
+    email VARCHAR,
+    todo VARCHAR
+)
+
+CREATE TABLE task_list (
+    pk INTEGER PRIMARY KEY AUTOINCREMENT,
+    task VARCHAR,
+    stage INTEGER
+)
