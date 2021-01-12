@@ -42,6 +42,28 @@ def check_pw(username):
     return password
 
 
+def check_users():
+    connection = sqlite3.connect('flask_tut.db', check_same_thread=False)
+    cursor = connection.cursor()
+    cursor.execute(
+        """
+        SELECT username FROM users ORDER BY pk DESC;
+        """
+    )
+    db_users = cursor.fetchall()
+    users = []
+    if db_users is not None:
+        for u in db_users:
+            person = u[0]
+            users.append(person)
+
+    connection.commit()
+    cursor.close()
+    connection.close()
+
+    return users
+
+
 def signup(username, password, favorite_color):
     connection = sqlite3.connect('flask_tut.db', check_same_thread=False)
     cursor = connection.cursor()

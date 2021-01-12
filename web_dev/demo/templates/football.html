@@ -1,6 +1,9 @@
 {% extends "structure.html" %}
 
 {% block main %}
-    <h1>This is the Football page</h1>
-    <h2>{{message}}</h2>
+<h1>YOU ARE LOGGED IN</h1>
+<br>
+<a href="/logout">Log out</a>
+<br>
+{{message | safe}}
 {% endblock main %}
