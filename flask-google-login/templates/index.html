@@ -2,12 +2,11 @@
   <head>
     <meta name="google-signin-scope" content="profile email">
     <meta name="google-signin-client_id" content="1080113950590-vbrvsg4ohu4tk0hktfad3makk64dhgd6.apps.googleusercontent.com">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
   </head>
   <body>
-    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+    <div data-theme="dark", id="sign-in"></div>
     <script>
-      function onSignIn(googleUser) {
+      function onSuccess(googleUser) {
         var profile = googleUser.getBasicProfile();
         var id_token = googleUser.getAuthResponse().id_token;
         var xhr = new XMLHttpRequest();
@@ -25,14 +24,33 @@
           id_token: id_token
         };
         xhr.send(JSON.stringify(data));
-        };
-      
-        // Useful data for your client-side scripts:
-        
+      }
 
-        // The ID token you need to pass to your backend:
-        
-      
+      function onFailure(error) {
+        console.log(error)
+      }
+
+      function renderButton() {
+        gapi.signin2.render("sign-in", {
+          'scope': 'profile email',
+          'width': 240,
+          'height': 50,
+          'longtitle': true,
+          'theme': 'dark',
+          'onsuccess': onSuccess,
+          'onfailure': onFailure
+        });
+      }
+    </script>
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+    <a href="#" onclick="signOut();">Sign out</a>
+    <script>
+      function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function () {
+          console.log('User signed out.');
+        });
+      }
     </script>
   </body>
 </html>
